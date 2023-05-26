@@ -1,0 +1,234 @@
+/*
+Colors used
+Text Color: #000000;
+Visited Link: #6e0505
+Active Link: #489c79
+Grid Color: v
+Sun Color Day: #edc655;
+Sun Color Afternoon: #f76414
+Focus & Hover: rgb(0, 0, 255)
+Border: #000
+*/
+
+:root {
+    --button-color: #6c357b;
+    --text-color: #000000;
+    --visit-color: #6e0505;
+    --active-color: #489c79;
+    --grid-color: rgb(0, 255, 0);
+    --sun1-color: #edc655;
+    --sun2-color: #f76414;
+    --focus-color: rgb(0, 0, 255);
+    --hover-color: rgb(0, 0, 255);
+    --border-color: #000;
+    --font-family: 'Roboto', sans-serif;
+    --text-color2: #fff;
+    --footer-font-style: italic;
+    --body-font-weight: 120;
+    --header-font-weight: 1000;
+}
+
+header {
+    font-weight: var(--header-font-weight);
+}
+
+body {
+    font-family: var(--font-family);
+    font-weight: var(--body-font-weight);
+}
+
+footer {
+    font-style: var(--footer-font-style);
+}
+
+a {
+    color: var(--button-color);
+}
+
+a:hover,
+a:focus {
+    /* no underlining when hovering over a link */
+    text-decoration: none;
+}
+
+a:visited {
+    /* visited link */
+    color: var(--visit-color);
+}
+
+
+a:active {
+    /* selected link */
+    color: var(--visit-color);
+}
+
+a :focus {
+    outline: 2px solid var(--focus-color);
+}
+
+
+.page-header {
+    display: flex;
+    width: 100%;
+    padding: 20px;
+    border-bottom: 2px solid var(--border-color);
+
+}
+
+.page-header__item {
+    flex: 0 1 100px;
+    width: 10px;
+    height: 100px;
+
+}
+
+
+.page-header__item:last-child {
+    flex-grow: 1;
+    text-align: right;
+}
+
+
+.navigation-list,
+.hobbies {
+    list-style-type: none;
+    padding: 0;
+}
+
+.navigation-list li {
+    display: inline-block;
+    margin-left: 15px;
+    flex-grow: 1;
+    text-align: right;
+}
+
+.navigation-list__item--active {
+    text-decoration: none;
+}
+
+.profile {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+
+}
+
+.profile_portrait {
+    float: left;
+    width: 100px;
+    height: auto;
+    margin-right: 40px;
+    border-radius: 50%;
+}
+
+.page-footer {
+    clear: both;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.grid__item {
+    background-color: var(--grid-color);
+}
+
+@media all and (max-width: 500px) {
+    .grid {
+        grid-template-columns: 1fr;
+    
+    }
+
+
+    h1, h2, p {
+        font-size: smaller;
+    }
+}
+
+@media all and (min-width: 500px) {
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+        margin: 10px;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+}
+
+.button,
+button {
+    border: none;
+    display: inline-flex;
+    font-family: inherit;
+    background-color: var(--button-color);
+    color: var(--text-color2);
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 3px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+    transition-duration: 0.2s;
+    transition-property: opacity;
+    align-items: center;
+}
+
+button:hover,
+button:focus,
+.button:hover,
+.button:focus {
+    /* lets the mouse appear as a hand when hovering over the button */
+    cursor: pointer;
+    /* reduces the opacity of the button to 80% */
+    opacity: 0.8;
+}
+
+@keyframes color-change {
+    from {
+        fill: var(--sun1-color);
+    }
+
+    to {
+        fill: var(--sun2-color);
+    }
+}
+
+.sun {
+    animation-duration: 4s;
+    animation-name: color-change;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+
+@keyframes cloud-move {
+    from {
+        transform: translate(0, 50px);
+    }
+
+    to {
+        transform: translate(200px, 50px);
+    }
+}
+
+.cloud-front {
+    animation: 30s cloud-move infinite alternate linear;
+}
+
+@keyframes cloud-move-reverse {
+    from {
+        transform: translate(446px, 48px);
+    }
+
+    to {
+        transform: translate(100px, 48px);
+    }
+}
+
+.cloud-back {
+    animation: 34s cloud-move-reverse infinite alternate linear;
+}
+
+* {
+    box-sizing: border-box;
+}
