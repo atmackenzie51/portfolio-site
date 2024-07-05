@@ -1,15 +1,3 @@
-/*
-Colors used
-Text Color: #000000;
-Visited Link: #6e0505
-Active Link: #489c79
-Grid Color: v
-Sun Color Day: #edc655;
-Sun Color Afternoon: #f76414
-Focus & Hover: rgb(0, 0, 255)
-Border: #000
-*/
-
 :root {
     --button-color: #6c357b;
     --text-color: #000000;
@@ -35,10 +23,18 @@ header {
 body {
     font-family: var(--font-family);
     font-weight: var(--body-font-weight);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
 }
 
 footer {
     font-style: var(--footer-font-style);
+    width: 100%;
+    text-align: center;
 }
 
 a {
@@ -56,38 +52,31 @@ a:visited {
     color: var(--visit-color);
 }
 
-
 a:active {
     /* selected link */
     color: var(--visit-color);
 }
 
-a :focus {
+a:focus {
     outline: 2px solid var(--focus-color);
 }
-
 
 .page-header {
     display: flex;
     width: 100%;
     padding: 20px;
     border-bottom: 2px solid var(--border-color);
-
+    justify-content: space-between;
 }
 
 .page-header__item {
-    flex: 0 1 100px;
-    width: 10px;
+    flex: 0 1 auto;
     height: 100px;
-
 }
-
 
 .page-header__item:last-child {
-    flex-grow: 1;
     text-align: right;
 }
-
 
 .navigation-list,
 .hobbies {
@@ -108,16 +97,18 @@ a :focus {
 
 .profile {
     max-width: 700px;
-    margin: 0 auto;
     text-align: center;
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 .profile_portrait {
-    float: left;
-    width: 100px;
-    height: auto;
-    margin-right: 40px;
+    width: 200px;
+    height: 200px;
+    margin-bottom: 20px;
     border-radius: 50%;
 }
 
@@ -125,7 +116,15 @@ a :focus {
     clear: both;
     display: flex;
     flex-direction: column;
-    text-align: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.page-footer .social-media {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
 }
 
 .grid__item {
@@ -135,9 +134,7 @@ a :focus {
 @media all and (max-width: 500px) {
     .grid {
         grid-template-columns: 1fr;
-    
     }
-
 
     h1, h2, p {
         font-size: smaller;
