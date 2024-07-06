@@ -1,4 +1,4 @@
-/* header {
+header {
     font-weight: var(--header-font-weight);
 }
 
@@ -17,7 +17,7 @@ footer {
     font-style: var(--footer-font-style);
     width: 100%;
     text-align: center;
-} */
+}
 
 
 .page-header {

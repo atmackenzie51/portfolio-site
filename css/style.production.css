@@ -1,26 +1,165 @@
-/* Global styles */
-body{font-family:var(--font-family);font-weight:var(--body-font-weight);display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:100vh;margin:0}footer{font-style:var(--footer-font-style);width:100%;text-align:center}
+header {
+    font-weight: var(--header-font-weight);
+}
 
-/* Header */
-.page-header{display:flex;width:100%;padding:20px;border-bottom:2px solid var(--border-color);justify-content:space-between;background-color:#ADBBDA}.page-header__item{flex:0 1 auto;height:100px}.page-header__item:last-child{text-align:right}
+body {
+    font-family: var(--font-family);
+    font-weight: var(--body-font-weight);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
 
-/* Navigation */
-.navigation-list,.hobbies{list-style-type:none;padding:0}.navigation-list li{display:inline-block;margin-left:15px;flex-grow:1;text-align:right}.navigation-list__item--active{text-decoration:none}
+footer {
+    font-style: var(--footer-font-style);
+    width: 100%;
+    text-align: center;
+}
 
-/* Profile */
-.profile{display:flex;align-items:center;justify-content:center;margin:400px;width:100%;max-width:800px}.profile_portrait{flex:0 0 auto;margin-right:20px}.profile section{flex:1 1 auto}
+.page-header {
+    display: flex;
+    width: 100%;
+    padding: 20px;
+    border-bottom: 2px solid var(--border-color);
+    justify-content: space-between;
+    background-color: #ADBBDA; /* Change this to your desired color */
+}
 
-/* Footer */
-.page-footer{display:flex;justify-content:center;align-items:center;flex-direction:column}
+.page-header__item {
+    flex: 0 1 auto;
+    height: 100px;
+}
 
-/* Social Media */
-.social-media{display:flex;gap:10px}
+.page-header__item:last-child {
+    text-align: right;
+}
 
-/* Grid */
-.grid__item{background-color:var(--grid-color)}
+.navigation-list,
+.hobbies {
+    list-style-type: none;
+    padding: 0;
+}
 
-/* Links */
-a{color:var(--button-color)}.button,button{border:none;display:inline-flex;font-family:inherit;background-color:var(--button-color);color:var(--text-color2);text-decoration:none;padding:10px;border-radius:3px;border-bottom:2px solid rgba(0,0,0,.3);transition-duration:.2s;transition-property:opacity;align-items:center}.button:hover,button:hover,.button:focus,button:focus{cursor:pointer;opacity:.8}.a:hover,.a:focus{text-decoration:none}.a:visited{color:var(--visit-color)}.a:active,.a:focus{outline:2px solid var(--focus-color)}
+.navigation-list li {
+    display: inline-block;
+    margin-left: 15px;
+    flex-grow: 1;
+    text-align: right;
+}
 
-/* Media Queries */
-@media all and (max-width:500px){.grid{grid-template-columns:1fr}h1,h2,p{font-size:smaller}}@media all and (min-width:500px){.grid{display:grid;grid-template-columns:1fr 1fr;grid-gap:10px;margin:10px}h1{font-size:25px}}
+.navigation-list__item--active {
+    text-decoration: none;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 400px;
+    width: 100%;
+    max-width: 800px;
+}
+
+.profile_portrait {
+    flex: 0 0 auto;
+    margin-right: 20px;
+}
+
+.profile section {
+    flex: 1 1 auto;
+}
+
+.page-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.social-media {
+    display: flex;
+    gap: 10px;
+}
+
+.grid__item {
+    background-color: var(--grid-color);
+}
+
+a {
+    color: var(--button-color);
+}
+
+/* pointer styles */
+a:hover,
+a:focus {
+    /* no underlining when hovering over a link */
+    text-decoration: none;
+}
+
+a:visited {
+    /* visited link */
+    color: var(--visit-color);
+}
+
+a:active {
+    /* selected link */
+    color: var(--visit-color);
+}
+
+a:focus {
+    outline: 2px solid var(--focus-color);
+}
+
+/* sizing styles */
+@media all and (max-width: 500px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    h1, h2, p {
+        font-size: smaller;
+    }
+}
+
+@media all and (min-width: 500px) {
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+        margin: 10px;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+}
+
+/* button styles */
+.button,
+button {
+    border: none;
+    display: inline-flex;
+    font-family: inherit;
+    background-color: var(--button-color);
+    color: var(--text-color2);
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 3px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+    transition-duration: 0.2s;
+    transition-property: opacity;
+    align-items: center;
+}
+
+button:hover,
+button:focus,
+.button:hover,
+.button:focus {
+    /* lets the mouse appear as a hand when hovering over the button */
+    cursor: pointer;
+    /* reduces the opacity of the button to 80% */
+    opacity: 0.8;
+}
