@@ -51,7 +51,7 @@ footer {
     text-align: right;
 }
 
-/* .navigation-list {
+.navigation-list {
   list-style-type: none;
   color: black;
   font-size: large;
@@ -70,9 +70,9 @@ footer {
 
 .navigation-list__item {
   color: black;
-} */
+}
 
-.navigation-list,
+/* .navigation-list,
 .hobbies {
     list-style-type: none;
     padding: 0;
@@ -88,7 +88,7 @@ footer {
 
 .navigation-list__item--active {
     text-decoration: none;
-}
+} */
 
 .profile {
     display: flex;
