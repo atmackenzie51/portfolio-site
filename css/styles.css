@@ -19,29 +19,6 @@ footer {
     text-align: center;
 }
 
-a {
-    color: var(--button-color);
-}
-
-a:hover,
-a:focus {
-    /* no underlining when hovering over a link */
-    text-decoration: none;
-}
-
-a:visited {
-    /* visited link */
-    color: var(--visit-color);
-}
-
-a:active {
-    /* selected link */
-    color: var(--visit-color);
-}
-
-a:focus {
-    outline: 2px solid var(--focus-color);
-}
 
 .page-header {
     display: flex;
@@ -111,6 +88,41 @@ a:focus {
     background-color: var(--grid-color);
 }
 
+
+a {
+    color: var(--button-color);
+}
+
+
+
+
+/*pointer styles */
+a:hover,
+a:focus {
+    /* no underlining when hovering over a link */
+    text-decoration: none;
+}
+
+a:visited {
+    /* visited link */
+    color: var(--visit-color);
+}
+
+a:active {
+    /* selected link */
+    color: var(--visit-color);
+}
+
+a:focus {
+    outline: 2px solid var(--focus-color);
+}
+
+
+
+
+
+/* sizing styles */
+
 @media all and (max-width: 500px) {
     .grid {
         grid-template-columns: 1fr;
@@ -133,6 +145,10 @@ a:focus {
         font-size: 25px;
     }
 }
+
+
+
+/*button styles */
 
 .button,
 button {
