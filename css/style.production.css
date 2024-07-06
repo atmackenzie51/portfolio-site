@@ -11,6 +11,7 @@ body {
     justify-content: center;
     min-height: 100vh;
     margin: 0;
+    position: relative; /* Ensure body is positioned relative */
 }
 
 footer {
@@ -26,6 +27,9 @@ footer {
     border-bottom: 2px solid var(--border-color);
     justify-content: space-between;
     background-color: #ADBBDA; /* Change this to your desired color */
+    position: fixed; /* Fix the header at the top */
+    top: 0; /* Align at the top of the viewport */
+    z-index: 1000; /* Ensure it appears above other content */
 }
 
 .page-header__item {
@@ -78,7 +82,6 @@ footer {
     object-fit: cover; /* Ensures the image covers the entire container */
     object-position: center; /* Centers the image within the container */
 }
-
 
 .profile section {
     flex: 1 1 auto;
