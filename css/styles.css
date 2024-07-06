@@ -93,7 +93,7 @@ a:focus {
     flex: 1 1 auto;
   }
 
-  page-footer {
+  .page-footer {
     display: flex;
     justify-content: center;
     align-items: bottom;
