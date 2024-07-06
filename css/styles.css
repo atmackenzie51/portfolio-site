@@ -80,30 +80,32 @@ a:focus {
 .profile {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     margin: 20px;
-  }
+    width: 100%;
+    max-width: 800px;
+}
 
-  .profile_portrait {
+.profile_portrait {
     flex: 0 0 auto;
     margin-right: 20px;
-  }
+}
 
-  .profile section {
+.profile section {
     flex: 1 1 auto;
-  }
+}
 
-  .page-footer {
+.page-footer {
     display: flex;
     justify-content: center;
     align-items: bottom;
     flex-direction: column;
-  }
+}
 
-  .social-media {
+.social-media {
     display: flex;
     gap: 10px;
-  }
+}
 
 .grid__item {
     background-color: var(--grid-color);
