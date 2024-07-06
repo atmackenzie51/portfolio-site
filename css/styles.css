@@ -26,7 +26,7 @@ footer {
     padding: 20px;
     border-bottom: 2px solid var(--border-color);
     justify-content: space-between;
-    background: #ADBBDA
+    background-color: #ADBBDA; /* Change this to your desired color */
 }
 
 .page-header__item {
@@ -89,15 +89,11 @@ footer {
     background-color: var(--grid-color);
 }
 
-
 a {
     color: var(--button-color);
 }
 
-
-
-
-/*pointer styles */
+/* pointer styles */
 a:hover,
 a:focus {
     /* no underlining when hovering over a link */
@@ -118,12 +114,7 @@ a:focus {
     outline: 2px solid var(--focus-color);
 }
 
-
-
-
-
 /* sizing styles */
-
 @media all and (max-width: 500px) {
     .grid {
         grid-template-columns: 1fr;
@@ -147,10 +138,7 @@ a:focus {
     }
 }
 
-
-
-/*button styles */
-
+/* button styles */
 .button,
 button {
     border: none;
