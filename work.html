@@ -17,13 +17,14 @@
 <body>
   <header class="page-header">
     <!--SVG logo was AI generated-->
-    <img src="img/cat-logo.svg" alt="Personal logo of Alex MacKenzie, an image of a cat holding a sushi roll"
-      class="page-header__item">
-
+    <div class="page-header__item">
+      <img src="img/modified-cat-logo.svg" alt="Personal logo of Alex MacKenzie, an image of a cat holding a sushi roll"
+        class="page-header__item">
+    </div>
     <nav class="main-navigation page-header__item">
       <ul role="menubar" class="navigation-list">
         <li role="presentation">
-          <a href="index.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Home</a>
+          <a href="index.html" role="menuitem" class="navigation-list__item">Home</a>
         </li>
         <li role="presentation">
           <a href="about.html" role="menuitem" class="navigation-list__item">About Myself</a>
@@ -39,13 +40,13 @@
   </header>
 
   <!--Main Content-->
-  <section>
+  <section class="grid_offset">
     <h1>Work</h1>
     <div class="grid">
       <div class="grid__item">
         <!--Achievement 1-->
         <h2>Pokédex Application</h2>
-        <img src="img/Achieve1/Pokedex-app-display.png" />
+        <img src="img/Achieve1/Pokedex-app-display.png" class="screenshots" />
         <p>
           This is an introduction project with JavaScript that populates a Pokédex from an external API. The user can
           click a Pokémon name from a list of the original 150 Pokémon released in 1996 and a modal will show some basic
@@ -57,7 +58,7 @@
       <div class="grid__item">
         <!--Achievement 2-->
         <h2>Movie API Creation</h2>
-        <img src="img/Achieve2/movie-api.png" />
+        <img src="img/Achieve2/movie-api.png" class="screenshots" />
         <p>
           To build the server-side component of a “movies” database application based on a prepopulated list of movies
           that I chose as well as allow a user to create a profile on the application and save movies to their
@@ -68,7 +69,7 @@
       <div class="grid__item">
         <!--Achievement 3-->
         <h2>myFlix Application - React</h2>
-        <img src="img/Achieve3/myFlix-React-gallery.png" />
+        <img src="img/Achieve3/myFlix-React-gallery.png" class="screenshots" />
         <p>
           This project created the client-side of the "myFlix" application by utilizing the movie API created in
           project 2. The client-side was created with React and is a single page application that allows users to
@@ -81,7 +82,7 @@
       <div class="grid__item">
         <!--Achievement 4-->
         <h2>EventFinder App</h2>
-        <img src="img/Achieve4/EventFinder-app.png" />
+        <img src="img/Achieve4/EventFinder-app.png" class="screenshots" />
         <p>
           To build a serverless, progressive web application (PWA) with React using a test-driven development (TDD)
           technique. The application practiced test-driven development by exploring Unit, Integration, User-Acceptance
@@ -93,7 +94,7 @@
       <div class="grid__item">
         <!--Achievement 5-->
         <h2>Chat App (React Native)</h2>
-        <img src="img/Achieve5/Chat-app.png" />
+        <img src="img/Achieve5/Chat-app.png" class="screenshots" />
         <p>
           This is a mobile messaging app built using React Native. It allows the user to interface in a "chatroom" with
           other users, share images, send their location, and access existing messages offline. It operates for iOS and
@@ -105,7 +106,7 @@
       <div class="grid__item">
         <!--Achievement 6-->
         <h2>myFlix - Angular</h2>
-        <img src="img/Achieve6/myFlix-Angular.png" />
+        <img src="img/Achieve6/myFlix-Angular.png" class="screenshots" />
         <p>
           This project was to recreate the myFlix application using Angular utilizing the movie REST API and defined
           endpoints created in a previous project.
@@ -118,13 +119,11 @@
 
   <footer class="page-footer">
     <p>Find me on</p>
-    <!-- discord is purposely not linked-->
     <div class="social-media">
       <a href="https://github.com/me50/atmackenzie51" target="_blank"><img src="img/github-logo.svg"
           style="width: 30px; height: 30px" alt="Github link"></a>
       <a href="https://www.linkedin.com/in/alex-t-mackenzie/" target="_blank"><img src="img/linkedin-logo.svg"
           style="width: 30px; height: 30px" alt="LinkedIn link"></a>
-      <img src="img/discord-logo.svg" style="width: 30px; height: 30px" alt="Discord link">
     </div>
   </footer>
 

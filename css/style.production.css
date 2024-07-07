@@ -27,6 +27,11 @@ footer {
     padding: 20px; /* Add padding to the footer */
 }
 
+/* Centering the <h1> element */
+h1 {
+    text-align: center; /* Center the text horizontally */
+}
+
 .page-header {
     display: flex;
     width: 100%;
@@ -122,6 +127,7 @@ footer {
     border-radius: 10px; /* Rounded corners */
 }
 
+
 .profile_portrait img {
     width: 150px;
     height: 150px;
@@ -149,13 +155,39 @@ footer {
     height: 50px; /* Set your desired height */
 }
 
-.grid__item {
-    background-color: var(--grid-color);
+
+.screenshots {
+    max-width: 90%; /* Ensure images scale down to fit their container */
+    height: auto; /* Allow images to scale proportionally */
+    display: block; /* Remove any extra space below the image */
+    border-radius: 10px; /* Optional: Rounded corners */
+    margin: auto;
 }
 
-a {
-    color: var(--button-color);
+.grid_offset{
+    margin: 200px;
 }
+
+.grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .grid__item {
+    
+    background-color: rgba(211, 211, 211, 0.48);
+    padding: 20px;
+  
+    a {
+      display: block;
+      padding: 5px;
+    }
+  }
 
 /* pointer styles */
 a:hover,
