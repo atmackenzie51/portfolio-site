@@ -17,13 +17,14 @@
 <body>
   <header class="page-header">
     <!--SVG logo was AI generated-->
-    <img src="img/cat-logo.svg" alt="Personal logo of Alex MacKenzie, an image of a cat holding a sushi roll"
-      class="page-header__item">
-
+    <div class="page-header__item">
+      <img src="img/modified-cat-logo.svg" alt="Personal logo of Alex MacKenzie, an image of a cat holding a sushi roll"
+        class="page-header__item">
+    </div>
     <nav class="main-navigation page-header__item">
       <ul role="menubar" class="navigation-list">
         <li role="presentation">
-          <a href="index.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Home</a>
+          <a href="index.html" role="menuitem" class="navigation-list__item">Home</a>
         </li>
         <li role="presentation">
           <a href="about.html" role="menuitem" class="navigation-list__item">About Myself</a>
@@ -39,22 +40,33 @@
   </header>
 
 
-
-  <section>
-    <div class="profile">
-      <h1>About me</h1>
+  <main class="profile">
+    <section class="about_section">
+      <h1>About Me</h1>
       <p>
-        My name is Alex MacKenzie and here are somethings I enjoy: </p>
-      <ul class="hobbies">
-        <li>Hiking</li>
-        <li>Video Games</li>
-        <li>Food</li>
-      </ul>
-      <a href="https://www.linkedin.com/in/alex-t-mackenzie/" class="button" target="_blank">See my LinkedIn Page</a>
+        I am originally from Seattle, WA, USA but have lived all over the country. I have been pursuing learning
+        full stack development for the past year while working full time. In my spare time I like to hike, plan
+        my next travel vacation and find the latest tasty food spot with my wife.
+      </p>
+    </section>
+
+    <div class="photo_section">
+      <div class="about_portrait_container">
+        <img src="img/Alex-hike.JPEG" class="about_portrait" alt="Alex MacKenzie on a hike">
+      </div>
     </div>
+  </main>
 
-  </section>
 
+  <footer class="page-footer">
+    <p>Find me on</p>
+    <div class="social-media">
+      <a href="https://github.com/me50/atmackenzie51" target="_blank"><img src="img/github-logo.svg"
+          alt="Github link"></a>
+      <a href="https://www.linkedin.com/in/alex-t-mackenzie/" target="_blank"><img src="img/linkedin-logo.svg"
+          alt="LinkedIn link"></a>
+    </div>
+  </footer>
   <script src="js/tota11y.js"></script>
 </body>
 
